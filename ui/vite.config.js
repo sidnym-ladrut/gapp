@@ -11,6 +11,6 @@ export default ({ mode }) => {
     plugins: [
       urbitPlugin({ base: 'gapp', target: SHIP_URL }),
       react({ include: /\.((t|j)sx?)|(s?css)$|(html?)/ }),
-    ]
+    ],
   });
 };
