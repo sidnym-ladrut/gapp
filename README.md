@@ -1,6 +1,6 @@
 # `%gapp`
 
-A `%gall` app template for Urbit
+A simple and modern `%gall` app template for Urbit.
 
 ## Build/Develop
 

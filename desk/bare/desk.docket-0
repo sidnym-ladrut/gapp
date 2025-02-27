@@ -1,0 +1,9 @@
+:~  title+'gapp'
+    info+'A simple and modern `%gall` app template for Urbit.'
+    color+0x11.1111
+    version+[1 0 0]  ::  411k
+    website+'https://github.com/sidnym-ladrut/gapp'
+    license+'MIT'
+    base+'gapp'
+    glob-http+['https://raw.githubusercontent.com/v1.0.0/meta/glob/glob-0v3.7459e.k0n6u.icege.hvnfi.cmul0.glob' 0v3.7459e.k0n6u.icege.hvnfi.cmul0]
+==
