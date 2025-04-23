@@ -1,7 +1,7 @@
 :~  title+'gapp'
     info+'A simple and modern `%gall` app template for Urbit.'
     color+0x11.1111
-    version+[1 0 0]  ::  411k
+    version+[1 0 1]  ::  411k
     website+'https://github.com/sidnym-ladrut/gapp'
     license+'MIT'
     base+'gapp'
