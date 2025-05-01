@@ -1,6 +1,6 @@
 {
   "name": "%gapp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -19,12 +19,12 @@
     "@tailwindcss/postcss": "^4.0.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@urbit/vite-plugin-urbit": "^1.1.0",
+    "@urbit/vite-plugin-urbit": "github:urbit/vite-plugin-urbit#e2e8419",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.5.2",
     "tailwindcss": "^4.0.6",
     "typescript": "^5",
-    "vite": "^4.5.9"
+    "vite": "^6.2.1"
   }
 }

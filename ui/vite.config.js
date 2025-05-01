@@ -12,5 +12,24 @@ export default ({ mode }) => {
       urbitPlugin({ base: 'gapp', target: SHIP_URL }),
       react({ include: /\.((t|j)sx?)|(s?css)$|(html?)/ }),
     ],
+    build: {
+      rollupOptions: {
+        // NOTE: Vite 5+ hashes with captial letters, which Urbit won't accept
+        output: {
+          hashCharacters: "base36",
+          assetFileNames: ({ names, originalFileNames, source }) => {
+            return !names?.[0]
+              ? `assets/[name]-[hash][extname]`
+              : `assets/${(names?.[0].split('.')[0]).toLowerCase()}-[hash][extname]`;
+          },
+          chunkFileNames: ({ name, moduleIds }) => {
+            return `${name.toLowerCase()}-[hash].js`;
+          },
+          entryFileNames: ({ name, moduleIds }) => {
+            return `${name.toLowerCase()}.js`;
+          },
+        },
+      },
+    },
   });
 };
